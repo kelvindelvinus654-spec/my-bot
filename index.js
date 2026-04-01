@@ -8,7 +8,6 @@ const groq = new Groq({ apiKey: "gsk_494YqMcWFpBLEocg3uhNWGdyb3FYFZxEM4NywEvWoke
 const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
-        executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
         headless: true,
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
