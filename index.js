@@ -18,6 +18,8 @@ const client = new Client({
             '--single-process',
             '--disable-gpu'
             ],
+        executablepath:
+         process.env.PUPPETEER_EXECUTABLE_PATH || null,
     }
 });
 
